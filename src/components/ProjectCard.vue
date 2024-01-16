@@ -1,7 +1,10 @@
 <template>
-<div class="card card-project">
-    <h3> {{ project.title }} </h3>
-    <p v-if="project.type"> {{ project.type.name }} </p>
+<div class="card border-warning mb-3" style="max-width: 18rem;">
+  <div class="card-header">{{ project.title }}</div>
+  <div class="card-body">
+    <h5 class="card-title" v-if="project.type"> {{ project.type.name }} </h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
 </div>
 </template>
 
@@ -17,9 +20,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card.card-project {
-    padding: 20px;
-    border-radius: 8px;
-    background-color: gray;
-}
+
 </style>

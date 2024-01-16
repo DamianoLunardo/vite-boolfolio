@@ -5,11 +5,10 @@
         </div>
     </div>
     <div class="container">
-        <div class="grid">
+        <div class="card-project row mb-3 justify-content-center gap-3 ">
             <ProjectCard class="card project-card" v-for="project in projects" :project="project" :key="project.id" />
         </div>
     </div>
-   
 </template>
 
 <script>
@@ -43,9 +42,5 @@ export default {
     }
 }
 </script>
-.grid {
-    display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    gap: 20px;
-}
+
 <style lang="scss" scoped></style>
