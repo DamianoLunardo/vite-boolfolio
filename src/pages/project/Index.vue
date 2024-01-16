@@ -1,11 +1,11 @@
 <template>
-    <div>
-        <div class="container">
+    <div class="container">
+        <div>
             <h1>Project</h1>
         </div>
     </div>
     <div class="container">
-        <div class="card-project row mb-3 justify-content-center gap-3 ">
+        <div class="card-project row  justify-content-center gap-3 ">
             <ProjectCard class="card project-card" v-for="project in projects" :project="project" :key="project.id" />
         </div>
     </div>

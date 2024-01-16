@@ -1,9 +1,9 @@
 <template>
 <div class="card border-warning mb-3" style="max-width: 18rem;">
-  <div class="card-header">{{ project.title }}</div>
   <div class="card-body">
-    <h5 class="card-title" v-if="project.type"> {{ project.type.name }} </h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="card-title-project">{{ project.title }}</div>
+    <h5  v-if="project.type">Type: {{ project.type.name }} </h5>
+    <p class="card-text">MORE TEXT</p>
   </div>
 </div>
 </template>
@@ -21,4 +21,12 @@ export default {
 
 <style lang="scss" scoped>
 
+
+.card-title-project {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 </style>
