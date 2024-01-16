@@ -1,12 +1,14 @@
 <template>
-<div class="card border-warning mb-3" style="max-width: 18rem;">
+<div class="card mb-3" style="max-width: 18rem;">
   <div class="card-body">
-    <div class="card-title-project">{{ project.title }}</div>
-    <h5  v-if="project.type">Type: {{ project.type.name }} </h5>
+    <h5 class="card-title">{{ project.title }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted" v-if="project.type">Type: {{ project.type.name }}</h6>
     <p class="card-text">MORE TEXT</p>
-    <router-link :to="{name: 'projects.show', params: {slug: project.slug}}">Watch project...</router-link>
+    <router-link :to="{name: 'projects.show', params: {slug: project.slug}}" class="btn btn-primary">Watch Project</router-link>
   </div>
 </div>
+
+
 </template>
 
 <script>
