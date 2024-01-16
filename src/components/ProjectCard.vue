@@ -4,6 +4,7 @@
     <div class="card-title-project">{{ project.title }}</div>
     <h5  v-if="project.type">Type: {{ project.type.name }} </h5>
     <p class="card-text">MORE TEXT</p>
+    <router-link :to="{name: 'projects.show', params: {slug: project.slug}}">Watch project...</router-link>
   </div>
 </div>
 </template>
