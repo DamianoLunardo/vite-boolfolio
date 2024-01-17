@@ -3,9 +3,9 @@
     <div class="container mt-5">
         <nav>
             <ul>
-                <li>
+                <!-- <li>
                     <img src="../img/ciao.jpeg" alt="logo">
-                </li>
+                </li> -->
                <li>
                 <!-- <a href="/">Home</a> -->
                 <RouterLink class="nav-link"  :to="{name: 'home'}">Home <span></span></RouterLink>
@@ -30,10 +30,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-    margin-top: 5px;
-}
-
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -54,11 +50,6 @@ nav ul li:first-child {
     margin-right: auto; 
 }
 
-img {
-    width: 100px;
-    border-radius: 10px;
-}
-
 .nav-link {
   position: relative;
   font-size: 1.1em;
@@ -69,6 +60,7 @@ img {
 
 .nav-link:hover {
   color: rgb(0, 128, 255);
+  font-size: 20px;
 }
 
 .nav-link span {
@@ -89,6 +81,5 @@ img {
   transform: scale(1) translateY(0);
   opacity: 1;
 }
-
 
 </style>
